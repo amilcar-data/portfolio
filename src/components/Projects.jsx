@@ -7,6 +7,8 @@ import energyDistributionImg from '../assets/energy_distribution.png';
 import jetImg from '../assets/jet.png';
 import lovecraftWebImg from '../assets/lovecraftweb.png';
 import gitlogo from '../assets/gitlogo.jpg';
+import cVAEImg from '../assets/cVAE.png';
+import coffeImg from '../assets/coffe.png';
 
 export default function Projects() {
   return (
@@ -140,6 +142,41 @@ export default function Projects() {
             </ExpandableCard>
           </div>
 
+          {/* --- New Project: Fast Calorimeter Simulation with a Conditional VAE --- */}
+          <div className="column is-one-quarter">
+            <ExpandableCard
+              title="Fast Calorimeter Simulation with a Conditional VAE"
+              src={cVAEImg}
+              description="ATLAS LAr Calorimeter Shower Simulation for HL-LHC"
+            >
+              <p><strong>Role:</strong> Machine Learning Developer (Surrogate Modeling & High-Energy Physics)</p>
+              <p>Accelerated electromagnetic shower generation in the ATLAS Liquid Argon (LAr) calorimeter using a conditional Variational Autoencoder (cVAE) to bypass Geant4 Monte Carlo simulations.</p>
+              <ul>
+                <li><strong>Physics Conditioning:</strong> Implemented a PyTorch cVAE conditioned on incident particle energy and pseudorapidity ($\eta$) to generate high-fidelity photon shower energy depositions.</li>
+                <li><strong>Physics-Grounded Validation:</strong> Validated outputs with detector-specific observables and energy distributions instead of relying solely on ML loss metrics.</li>
+                <li><strong>End-to-End Pipeline:</strong> Processed detector geometry, built a high-throughput PyTorch data pipeline, and improved training stability for sparse calorimeter data.</li>
+                <li><strong>Surrogate Performance:</strong> Replaced costly particle transport calculations with a fast, learned surrogate capable of scaling to HL-LHC collision rates.</li>
+              </ul>
+            </ExpandableCard>
+          </div>
+
+          {/* --- New Project: The Economic & Human Cost of Climate Change in Coffee Ecosystems --- */}
+          <div className="column is-one-quarter">
+            <ExpandableCard
+              title="The Economic & Human Cost of Climate Change in Coffee Ecosystems"
+              src={coffeImg}
+              description="Data-Driven Vulnerability & Yield Analysis: Honduras Case Study"
+            >
+              <p><strong>Role:</strong> Lead Data Scientist & Quantitative Researcher</p>
+              <p>Analyzed structural climate vulnerabilities in Honduran coffee production using historical climate, economic indicators, and machine learning.</p>
+              <ul>
+                <li><strong>High-Accuracy ML Modeling:</strong> Built a Random Forest regression achieving an $R^2$ of <strong>98.9%</strong> to predict coffee yield volatility from multi-decade climate and economic features.</li>
+                <li><strong>Counter-Intuitive Insights:</strong> Found structural factors and adaptive capacity cause a <strong>32.3% production drop</strong> in Honduras (+1.9°C) compared to other regions.</li>
+                <li><strong>Macroeconomic Analysis:</strong> Identified market decoupling where transient global export revenue peaks (e.g., $1.47B in 2023) mask long-term yield declines.</li>
+                <li><strong>Data Synthesis:</strong> Integrated multi-source datasets across 1961–2024 covering temperature, yield, export values, and farm infrastructure resilience.</li>
+              </ul>
+            </ExpandableCard>
+          </div>
 
         </div>
       </div>
