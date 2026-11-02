@@ -16,7 +16,7 @@ export default function DataAnalysisChart() {
   }, []);
 
  const options = {
-    chart: { type: 'areaspline', backgroundColor: 'transparent' },
+    chart: { type: 'areaspline', backgroundColor: 'transparent', height: 275 },
     title: { text: 'Converting data into decisions', style: { color: '#fff', fontSize: '18px', fontWeight: 'bold' } },
     xAxis: { visible: false },
     yAxis: { title: { text: 'Sales', style: { color: '#e2e8f0' } }, labels: { style: { color: '#e2e8f0' } } },

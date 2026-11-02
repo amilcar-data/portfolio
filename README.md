@@ -1,96 +1,44 @@
-[![My Skills](https://skillicons.dev/icons?i=react,vite,js,html,css,tailwind,bulma,highcharts,gh)](https://skillicons.dev)
+# Amilcar Torres | Data, AI & Physics
 
-# Portfolio Website
+A personal portfolio exploring data science, artificial intelligence, and high-energy physics. It features selected projects, interactive Highcharts visualizations, and a responsive React interface.
 
-This is my personal portfolio website built with **React** and **Vite**, featuring interactive visualizations, responsive design, and animated UI components.
+**Live site:** [amilcar-data.github.io/portfolio](https://amilcar-data.github.io/portfolio/)
 
-Live demo: [https://amilcartorres1000-web.github.io/portfolio/](https://amilcartorres1000-web.github.io/portfolio/)
+## Run locally
 
----
-
-## Technologies Used
-
-- React 19
-- Vite
-- Bulma
-- Tailwind CSS
-- Highcharts / Highcharts React
-- motion (motion/react)
-- Lucide React
-- clsx / tailwind-merge / class-variance-authority
-- GitHub Pages (gh-pages)
-- tw-animate-css
-
-> Note: The project uses Bulma for layout, Tailwind for custom UI utilities, and modern React animation patterns. If desired, `badtz-ui` could also be integrated as an additional component library for card-style UI elements.
-
----
-
-## Key Features
-
-- Responsive portfolio layout with a combined Bulma + Tailwind approach
-- Interactive charts for:
-  - Data analysis
-  - Particle collision simulation
-  - Web development tech stack
-  - AI training progress
-- Custom reusable components:
-  - `ExpandableCard`
-  - `Meteors` background effect
-  - `TypingAnimation`
-- Image assets served from `public/` for easy static hosting
-- Deployment via GitHub Pages
-
----
-
-## Project Structure
-
-- `src/App.jsx` — main app shell and routed sections
-- `src/components/` — all page components, sections, and charts
-- `src/components/ui/` — reusable UI components and animation helpers
-- `src/index.css` — global styling and Tailwind imports
-- `public/` — static images and assets
-
----
-
-## Installation
+Install Node.js 22, then run:
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-Build for production:
+Open the local URL printed in the terminal (usually `http://localhost:5173/portfolio/`). To check a production build:
 
 ```bash
 npm run build
-```
-
-Preview production build locally:
-
-```bash
 npm run preview
 ```
 
-Deploy to GitHub Pages:
+## Technologies and why I use them
 
-```bash
-npm run deploy
-```
+- **React and JavaScript** — I use components to organize the portfolio and React state to make the chart controls interactive, using a language I am comfortable with.
+- **Vite** — It provides a fast local development server and builds the static files needed for the site.
+- **Highcharts and Highcharts React** — They let me build interactive charts to explore distributions, particle masses, and ideas in data science and physics.
+- **CSS and Tailwind CSS** — Custom CSS gives the portfolio its visual identity and responsive layout; Tailwind utilities help style elements such as the animated meteors.
+- **Lucide React** — Its icons provide a consistent visual language for the different areas of work.
+- **GitHub Pages and GitHub Actions** — They host the static portfolio and automate its build and publication when the main branch is updated.
 
----
+## Project structure
 
-## Notes
+- `src/App.jsx` — sections, project content, and the data-lab charts
+- `src/App.css` and `src/index.css` — layout, styling, and responsive rules
+- `src/components/charts/` — skill visualizations
+- `src/components/ui/meteors.jsx` — animated star field
+- `src/assets/` — featured project and CMS event images
+- `public/favicon.svg` — browser icon
+- `.github/workflows/deploy.yml` — GitHub Pages deployment
 
-- Image assets are loaded from the `public/` folder.
-- The project alias `@` is configured in `vite.config.js` to simplify imports like `@/components/ui/meteors`.
-- The current codebase mixes Bulma layout classes with Tailwind utility classes for flexible styling.
+The data-lab normal curve is calculated from its probability density function; the particle chart uses approximate values linked to the Particle Data Group. Skill charts use illustrative data, not research results. The CMS event image is credited to CERN on the site.
 
----
-
-## Future Improvements
-
-- Add more project details and external links for each card
-- Improve the ExpandableCard component with better accessibility
-- Add full theme toggling (light/dark)
-- Optionally integrate `badtz-ui` for prebuilt card/UI components
-
+Built with React, Vite, JavaScript, Tailwind CSS, Highcharts, and Lucide React.

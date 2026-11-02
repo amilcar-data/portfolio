@@ -44,7 +44,7 @@ const layers = [
 
   const architectureOptions = {
     chart: {
-      height: 400,
+      height: 275,
       backgroundColor: 'transparent'
     },
     title: {
@@ -75,7 +75,7 @@ const layers = [
   const trainingOptions = {
     chart: {
       backgroundColor: 'transparent',
-      height: 400
+      height: 275
     },
     title: {
       text: 'Model Training Progress',

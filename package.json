@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://amilcartorres1000-web.github.io/portfolio",
+  "homepage": "https://amilcar-data.github.io/portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
-    "bulma": "^1.0.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "highcharts": "^12.4.0",

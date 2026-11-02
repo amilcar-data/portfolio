@@ -61,7 +61,7 @@ export default function ParticleCollisionChart() {
       type: 'scatter',
       backgroundColor: 'transparent',
       zooming: { type: 'xy' },
-      height: 400
+      height: 275
     },
 
     title: {
